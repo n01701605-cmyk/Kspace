@@ -3,89 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Just One Question...</title>
+  <title>Just A Small Question</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to top right, #ffdee9, #b5fffc);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       color: #333;
-      text-align: center;
-      overflow: hidden;
     }
 
-    .container {
+    .card {
+      background: #ffffff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
       max-width: 600px;
-      padding: 20px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.1);
-      position: relative;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #2c3e50;
     }
 
     p {
-      font-size: 1.2rem;
-      margin: 20px 0;
-    }
-
-    .heart {
-      color: red;
-      font-size: 2rem;
-      animation: heartbeat 1.2s infinite;
-    }
-
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.3); }
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 15px 0;
     }
 
     .button {
-      background-color: #ff4e8b;
+      background-color: #3498db;
       color: white;
+      padding: 12px 24px;
       border: none;
-      padding: 15px 25px;
-      font-size: 1rem;
       border-radius: 8px;
+      font-size: 1rem;
       cursor: pointer;
-      text-decoration: none;
       margin-top: 20px;
+      text-decoration: none;
       display: inline-block;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s;
     }
 
     .button:hover {
-      background-color: #e03e74;
+      background-color: #2980b9;
     }
 
     .footer {
-      margin-top: 30px;
+      margin-top: 25px;
       font-size: 0.9rem;
-      color: #777;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        margin: 10px;
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hey 😊</h1>
-    <p>I have something special to ask you...</p>
-    <p>We’ve shared laughs, moments, and memories.</p>
-    <p>And today, I just want to ask:</p>
-    <h1 class="heart">💖 Will You Be My Friend? 💖</h1>
-    <p>Not just any friend — a real, amazing, once-in-a-lifetime kind of friend. 🎁</p>
-    <a class="button" href="tel:YOUR_PHONE_NUMBER_HERE">Say Yes 💬</a>
+  <div class="card">
+    <img src="https://media.giphy.com/media/3ohs4BSacFKI7A717y/giphy.gif" alt="Smiling Girl GIF" />
+    <h1>Hey, Can I Ask You Something?</h1>
+    <p>
+      Life throws a lot at us, but every now and then, someone comes along who just makes everything lighter, brighter, and better.
+    </p>
+    <p>
+      I don’t want to be dramatic, but I truly think we’d make great friends — the kind that lasts.
+    </p>
+    <p>
+      So, would you be open to being friends?
+    </p>
+    <a class="button" href="tel:+1234567890">Sure, Let's Talk</a>
+
     <div class="footer">
-      (Click the button to call me)<br/>
-      Or text me if you're shy 😊
+      Or you can text me at <strong>+1234567890</strong><br />
+      (Totally no pressure, just thought I’d ask ✨)
     </div>
   </div>
 </body>
